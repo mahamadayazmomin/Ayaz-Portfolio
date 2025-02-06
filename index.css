@@ -540,4 +540,8 @@ img {
   .footer__icon:hover {
     color: var(--first-color);
   }
+
+    .skills__names img {
+    margin-right: 20px; /* Adjust space as needed */
+}
 }
