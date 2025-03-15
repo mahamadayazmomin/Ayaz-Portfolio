@@ -167,8 +167,30 @@ img {
   background-color: var(--first-color);
 }
 
-.nav__logo {
+/*.nav__logo {
   color: var(--second-color);
+}*/
+
+.nav__logo {
+  font-size: 15.008px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6f61, #ffeb3b, #4caf50, #2196f3, #9c27b0);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .nav__toggle {
