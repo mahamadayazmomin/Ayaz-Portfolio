@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MD Ayaz</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .name-container {
+      display: flex;
+      gap: 10px;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .letter {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .letter:hover {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      cursor: pointer;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="name-container" id="name"></div>
+
+  <script>
+    const name = "MD Ayaz";
+    const container = document.getElementById("name");
+
+    name.split("").forEach((char, index) => {
+      const span = document.createElement("span");
+      span.classList.add("letter");
+      span.textContent = char;
+      span.style.animationDelay = `${index * 0.2}s`;
+      container.appendChild(span);
+    });
+  </script>
+
+</body>
+</html>
