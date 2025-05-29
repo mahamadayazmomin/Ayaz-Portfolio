@@ -42,7 +42,7 @@
 ✔️ Skills\
 ✔️ Education\
 ✔️ Work\
-✔️ Contact\
+✔️ Contact
 
 
 
